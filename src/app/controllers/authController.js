@@ -17,6 +17,8 @@ function generateToken(params = {}) {
     })
 }
 
+
+
 router.post('/register', async (req, res) => {
 
     const { email } = req.body
@@ -68,7 +70,7 @@ router.post('/authenticate', async (req, res) => {
     
 })
 
-
+// aqui tem um ATO pois não veifica o tipo do email
 router.post('/forgot_password', async (req, res) => {
     const { email } = req.body
 
